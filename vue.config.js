@@ -7,7 +7,6 @@ module.exports = {
       appleMobileWebAppCapable: 'yes',
       appleMobileWebAppStatusBarStyle: 'default',
       workboxOptions: {
-        swSrc: 'src/service-worker.js',
         exclude: [/\.map$/, /_redirects/],
       }
     }
