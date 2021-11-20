@@ -58,7 +58,7 @@ export default {
         this.percent = localStorage.getItem("percent")
 
         if(this.base==null){
-        this.euro = 0.35
+        this.base = 0.35
         }
         if(isNaN(this.base)){
         this.base = 0.35
