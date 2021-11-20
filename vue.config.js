@@ -8,9 +8,9 @@ module.exports = {
       appleMobileWebAppStatusBarStyle: 'default',
     },
     workboxPluginMode: 'InjectManifest',
-     workboxOptions: {
-      swSrc: 'src/service-worker.js',
-      exclude: [/\.map$/, /_redirects/],
-    }
+       workboxOptions: {
+        swSrc: 'src/service-worker.js',
+        exclude: [/\.map$/, /_redirects/],
+      }
   }
   
