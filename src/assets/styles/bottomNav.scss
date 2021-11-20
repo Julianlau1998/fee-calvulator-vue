@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+#bottomNav {
+    width: 100vw;
+    height: 3.8rem;
+    position: absolute;
+    left: 0vw;
+    bottom: 0rem;
+    /* border-top: 2px solid rgb(165, 165, 165) !important; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    white-space: nowrap;
+    z-index: -1;
+    background-color: $navcolor;
+}
+.link {
+    color: rgb(28, 28, 28);
+    font-weight: 700;
+    font-size: 1.3rem;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: white;
+}
+.marginLeft {
+    margin-left: 1.5rem;
+}
+.marginRight {
+    margin-right: 1.5rem;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+@media (max-width: 300px) {
+    .marginLeft {
+        margin-left: 1rem;
+    }
+    .marginRight {
+        margin-right: 1rem;
+    }
+}

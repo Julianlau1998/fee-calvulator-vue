@@ -1,0 +1,22 @@
+{
+  "text": {
+    "calculator": {
+      "title": "Fee Calculator",
+      "send": "Send Money",
+      "receive": "Receive Money",
+      "fees": "Fees",
+      "rest": "Rest",
+      "sent": "Money Sent"
+    },
+    "settings": {
+      "text": "Paypal fees can differ from country to country. Simply set the correct value for your country here once.",
+      "language": "Language",
+      "save": "Save",
+      "reset": "Reset To Default"
+    },
+    "bottomNav": {
+      "send": "Send",
+      "receive": "Receive"
+    }
+  }
+}

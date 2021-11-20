@@ -1,0 +1,23 @@
+{
+  "text": {
+    "calculator":{
+      "title": "Gebührenrechner",
+      "send": "Geld Senden",
+      "receive": "Geld Empfangen",
+      "fees": "Gebühren",
+      "rest": "Restbetrag",
+      "sent": "Gesendet"
+    },
+    "settings": {
+      "title": "Gebührenrechner",
+      "text": "Paypal Gebühren können Sich von Land zu Land unterscheiden. Wähle hier einfach den richtigen Wert für Dein Land aus.",
+      "language": "Sprache",
+      "save": "Speichern",
+      "reset": "Reset"
+    },
+    "bottomNav": {
+      "send": "Senden",
+      "receive": "Empfangen"
+    }
+  }
+}
