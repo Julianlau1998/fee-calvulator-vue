@@ -1,7 +1,7 @@
 const lang = navigator.languag
 module.exports = {
     pwa: {
-      name: lang === 'de-DE' ? 'Paypal Gebührenrechner' : 'Fee Calculator For Paypal Fees',
+      name: 'Fee Calculator For Paypal Fees',
       themeColor: '#000809',
       msTileColor: '#000809',
       backgroundColor: '#000809',
