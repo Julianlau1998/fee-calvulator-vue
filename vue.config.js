@@ -1,4 +1,3 @@
-const lang = navigator.languag
 module.exports = {
     pwa: {
       name: 'Fee Calculator For Paypal Fees',
