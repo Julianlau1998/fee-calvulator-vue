@@ -1,6 +1,6 @@
 module.exports = {
   pwa: {
-    name: 'Libria',
+    name: 'Fee Calculator for Paypal (Gebührenrechner)',
     themeColor: '#000809',
     msTileColor: '#000809',
     backgroundColor: '#000809',
