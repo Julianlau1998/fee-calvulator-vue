@@ -34,11 +34,11 @@
           </select>
         </h3> 
         
-        <router-link class="button" id="save" to="/">
+        <button class="button" id="save" @click="save()">
           <b>
             {{ $t('text.settings.save') }}
           </b>
-        </router-link>
+        </button>
         <br><br>
         <button id="reset" @click="changeFees('europe')">
           <b>
@@ -57,6 +57,23 @@ export default {
       base: 0.35,
       langs: ['English', 'German'],
       selectedLanguage: ''
+    }
+  },
+  created () {
+    this.base = localStorage.getItem("base")
+    this.percent = localStorage.getItem("percent")
+
+    if(this.base==null){
+      this.base = 0.35
+    }
+    if(isNaN(this.base)){
+      this.base = 0.35
+    }
+    if(this.percent==null){
+      this.percent = 2.49
+    }  
+    if(isNaN(this.percent)){
+      this.percent = 2.49
     }
   },
   computed: {
@@ -97,6 +114,11 @@ export default {
           this.base = 4
           break
       }
+    },
+    save () {
+      localStorage.setItem('percent', this.percent)
+      localStorage.setItem('base', this.base)
+      this.$router.push('/')
     }
   }
 }
