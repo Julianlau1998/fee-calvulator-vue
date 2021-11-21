@@ -6,7 +6,9 @@ module.exports = {
     backgroundColor: '#000809',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'default',
-    workboxOptions: {
+    workboxPluginMode: 'InjectManifest',
+     workboxOptions: {
+      swSrc: 'src/service-worker.js',
       exclude: [/\.map$/, /_redirects/],
     }
   },
