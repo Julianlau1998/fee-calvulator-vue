@@ -20,6 +20,7 @@ const messages = {
 
 let chosenLanguage = localStorage.getItem('language')
 if (chosenLanguage === null) {
+  alert(chosenLanguage)
   if (navigator.language === 'de-DE') {
     chosenLanguage = 'German'  
   } else {

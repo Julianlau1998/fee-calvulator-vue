@@ -59,6 +59,16 @@ export default {
       selectedLanguage: ''
     }
   },
+  computed: {
+    language () {
+      return this.$i18n.locale
+    }
+  },
+  watch: {
+    language () {
+      localStorage.setItem('language', this.language)
+    }
+  },
   methods: {
     changeFees (country) {
       switch (country) {
