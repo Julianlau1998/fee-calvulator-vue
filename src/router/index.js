@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Help from '../views/Help.vue'
 import Settings from '../views/Settings.vue'
+import Privacy from '../views/Privacy.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,14 @@ const routes = [
     component: Settings,
     meta: {
       title: navigator.language === 'de-DE' ? 'Einstellungen' : 'Settings',
+    }
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: Privacy,
+    meta: {
+      title: navigator.language === 'de-DE' ? 'Datenschutzerklärung' : 'Privacy',
     }
   }
 ]
