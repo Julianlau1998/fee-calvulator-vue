@@ -45,6 +45,12 @@
             {{ $t('text.settings.reset') }}
           </b>
         </button>
+        <br>
+        <a class="button" id="rate" href='https://play.google.com/store/apps/details?id=app.netlify.paypal_fee_calculator.twa'>
+          <b>
+            {{ $t('text.settings.rate') }}
+          </b>
+        </a>
     </div>
   </div>
 </template>
