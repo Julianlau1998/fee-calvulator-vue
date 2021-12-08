@@ -17,18 +17,21 @@
         >
     </div>
     <p class="solutionParagraph mb-3 mt-2">
-        <span class="is-size-4">
-            {{ $t('text.calculator.fees') }}
+        <span v-if="page==='send'" class="is-size-4">
+            {{ $t('text.calculator.fees') }}:
+        </span>
+        <span v-else class="is-size-4">
+            {{ $t('text.calculator.sent') }}:
         </span>
         <span class="is-size-4">
             {{ isNaN(fees) ? 0 : fees }}<span v-if="$i18n.locale==='German'">€</span>
         </span> 
         <br />
         <span v-if="page==='send'" class="is-size-4">
-            {{ $t('text.calculator.rest') }}
+            {{ $t('text.calculator.rest') }}:
         </span> 
         <span v-else class="is-size-4">
-            {{ $t('text.calculator.sent') }}
+            {{ $t('text.calculator.fees') }}:
         </span> 
         <span class="is-size-4">
           {{ isNaN(rest) ? 0 : rest }}<span v-if="$i18n.locale==='German'">€</span>
