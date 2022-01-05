@@ -1,5 +1,5 @@
 <template>
-  <div id="bottomNav">
+  <div id="bottomNav" :class=" iOS ? 'bottomNavIos' : ''">
       <p class='link noselect'>
       <span
         @click="changePage('send')"
@@ -24,6 +24,7 @@ export default {
     name: 'bottomNav',
     data () {
         return {
+            iOS: false
         }
     },
     methods: {
@@ -37,6 +38,16 @@ export default {
                 this.$refs.receive.style.opacity = 1
             }
         }
+    },
+    created () {
+        this.iOS = [
+                'iPad Simulator',
+                'iPhone Simulator',
+                'iPod Simulator',
+                'iPad',
+                'iPhone',
+                'iPod'
+            ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
     },
     mounted () {
         this.$refs.send.style.opacity = 1
