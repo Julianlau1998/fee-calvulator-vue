@@ -47,10 +47,9 @@
         </button>
         <br>
         <a
-          v-if="!iOS"
           class="button"
           id="rate"
-          href='https://play.google.com/store/apps/details?id=app.netlify.paypal_fee_calculator.twa'
+          :href="appStoreLink"
         >
           <b>
             {{ $t('text.settings.rate') }}
@@ -93,6 +92,10 @@ export default {
     },
     iOS () {
       return this.$store.state.iOS
+    },
+    appStoreLink () {
+      if (this.iOS) return 'https://apps.apple.com/de/app/fee-calculator-for-paypal-fees/id1603306343'
+      return 'https://play.google.com/store/apps/details?id=app.netlify.paypal_fee_calculator.twa'
     }
   },
   watch: {

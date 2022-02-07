@@ -1,5 +1,5 @@
 <template>
-  <div id="bottomNav" :class=" iOS ? 'bottomNavIos' : ''">
+  <div id="bottomNav">
       <p class='link noselect'>
       <span
         @click="changePage('send')"
