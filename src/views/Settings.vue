@@ -46,7 +46,12 @@
           </b>
         </button>
         <br>
-        <a class="button" id="rate" href='https://play.google.com/store/apps/details?id=app.netlify.paypal_fee_calculator.twa'>
+        <a
+          v-if="!iOS"
+          class="button"
+          id="rate"
+          href='https://play.google.com/store/apps/details?id=app.netlify.paypal_fee_calculator.twa'
+        >
           <b>
             {{ $t('text.settings.rate') }}
           </b>
@@ -85,6 +90,9 @@ export default {
   computed: {
     language () {
       return this.$i18n.locale
+    },
+    iOS () {
+      return this.$store.state.iOS
     }
   },
   watch: {

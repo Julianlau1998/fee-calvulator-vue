@@ -2,8 +2,18 @@
 <div>
   <div class="columns is-centered">
     <div class="column">
-      <img src="../../public/img/helpButton.png" class="topButton mt-5 mx-4" @click="$router.push('/help')">
-      <img src="../../public/img/settings.png" class="topButton mt-5 mr-5" @click="$router.push('/settings')">
+      <img
+        src="../../public/img/helpButton.png"
+        class="topButton mx-4"
+        :class="iOS ? 'mt-4' : 'mt-5'"
+        @click="$router.push('/help')"
+      >
+      <img 
+        src="../../public/img/settings.png"
+        class="topButton mr-5"
+        :class="iOS ? 'mt-4' : 'mt-5'"
+        @click="$router.push('/settings')"
+      >
     </div>
   </div>
   <div class="columns is-centered mt-6">
@@ -32,6 +42,11 @@ export default {
   },
   created () {
     this.page = 'send'
+  },
+  computed: {
+    iOS () {
+      return this.$store.state.iOS
+    }
   },
   methods: {
     changePage(page) {

@@ -11,11 +11,21 @@ export default {
   components: { navbar },
   data () {
     return {
-      page: ''
+      page: '',
+      iOS: false
     }
   },
   created () {
     this.page = 'send'
+    this.iOS = [
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+    this.$store.state.iOS = this.iOS
   },
   methods: {
     changePage(page) {
