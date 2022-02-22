@@ -31,6 +31,14 @@ import bottomNav from "@/components/BottomNav.vue"
 
 export default {
   name: 'Home',
+  metaInfo: {
+      title: 'Paypal Gebührenrechner',
+      titleTemplate: '%s | Berechne schnell und einfach alle anfallenden Gebühren beim Bezahlen mit PayPal mit dem PayPal Gebührenrechner.',
+      htmlAttrs: {
+        lang: 'de',
+        amp: true
+      }
+    },
   components: {
     calculator,
     bottomNav

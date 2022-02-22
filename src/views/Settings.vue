@@ -46,7 +46,7 @@
           </b>
         </button>
         <br>
-        <a
+        <!-- <a
           class="button"
           id="rate"
           :href="appStoreLink"
@@ -54,13 +54,29 @@
           <b>
             {{ $t('text.settings.rate') }}
           </b>
-        </a>
+        </a> -->
     </div>
+    <div class="columns">
+          <div class="column is-half">
+              Rate
+          </div>
+          <div class="column is-half">
+              Share
+          </div>
+        </div>
   </div>
 </template>
 
 <script>
 export default {
+  metaInfo: {
+    title: 'Paypal Gebührenrechner',
+    titleTemplate: '%s | Einstellungen',
+    htmlAttrs: {
+      lang: 'de',
+      amp: true
+    }
+  },
   data () {
     return {
       percent: 2.49,

@@ -35,7 +35,14 @@
 
 <script>
 export default {
-
+    metaInfo: {
+    title: 'Paypal Gebührenrechner',
+    titleTemplate: '%s | Datenschutz',
+    htmlAttrs: {
+      lang: 'de',
+      amp: true
+    }
+  },
 }
 </script>
 
