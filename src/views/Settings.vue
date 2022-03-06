@@ -46,7 +46,7 @@
           </b>
         </button>
         <br>
-        <!-- <a
+        <a
           class="button"
           id="rate"
           :href="appStoreLink"
@@ -54,16 +54,20 @@
           <b>
             {{ $t('text.settings.rate') }}
           </b>
-        </a> -->
+        </a>
     </div>
-    <div class="columns">
-          <div class="column is-half">
+    <!-- <div class="columns is-mobile is-justify-content-center">
+          <div class="column is-2">
+            <button class="button">
               Rate
+            </button>
           </div>
-          <div class="column is-half">
+          <div class="column is-2">
+            <button class="button">
               Share
+            </button>
           </div>
-        </div>
+        </div> -->
   </div>
 </template>
 
