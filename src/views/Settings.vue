@@ -114,7 +114,7 @@ export default {
       return this.$store.state.iOS
     },
     appStoreLink () {
-      if (this.iOS) return 'https://apps.apple.com/app/id1603306343'
+      if (this.iOS) return 'itms-apps://itunes.apple.com/app/bars/id1603306343'
       return 'https://play.google.com/store/apps/details?id=app.netlify.paypal_fee_calculator.twa'
     }
   },
