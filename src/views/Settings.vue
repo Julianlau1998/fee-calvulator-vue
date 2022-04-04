@@ -47,6 +47,7 @@
         </button>
         <br>
         <a
+          v-if="!iOS"
           class="button"
           id="rate"
           :href="appStoreLink"
