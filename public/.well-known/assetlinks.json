@@ -1,6 +1,6 @@
 [{
         "relation": ["delegate_permission/common.handle_all_urls"],
-        "target" : { "namespace": "android_app", "package_name": "app.netlify.paypal_fee_calculator.twa",
-                     "sha256_cert_fingerprints": ["68:6F:B6:EA:C1:20:D9:13:CD:3C:F6:FA:D4:51:5A:66:96:65:AC:D6:5E:2F:DD:E5:98:6F:0A:AB:23:4C:C8:A0"] }
+        "target" : { "namespace": "android_app", "package_name": "app.paypal_fee_calculator_pro_jl.com",
+                     "sha256_cert_fingerprints": ["80:71:CA:22:6C:5C:0F:3A:B8:32:58:0E:FB:B6:88:4F:EE:F1:3D:2D:91:13:9D:89:9E:FC:DD:68:C8:64:AF:15"] }
       }
 ]
