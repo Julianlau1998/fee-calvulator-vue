@@ -45,7 +45,7 @@
             {{ $t('text.settings.reset') }}
           </b>
         </button>
-        <br>
+        <!-- <br>
         <a
           v-if="!iOS"
           class="button"
@@ -55,7 +55,7 @@
           <b>
             {{ $t('text.settings.rate') }}
           </b>
-        </a>
+        </a> -->
     </div>
     <!-- <div class="columns is-mobile is-justify-content-center">
           <div class="column is-2">
